@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>QUnit Test Suite</title>
+		<link rel="stylesheet" href="//code.jquery.com/qunit/qunit-1.17.1.css">
+	</head>
+	<body>
+		<div id="qunit"></div>
+		<div id="qunit-fixture">
+			<main style="display: none;">
+				<br><br>
+				<div id="piece"></div>
+				<div id="game">
+					<div id="board">
+					</div>
+					<div id="players">
+						<div id="player1">
+							<p>Player 1</p>
+							<select id="player1-color">
+								<option value='' selected ></option>
+								<option value="YELLOW">YELLOW</option>
+								<option value="RED">RED</option>
+							</select>
+							<div id="player1-win" class="hidden">
+								<p> WINS !! </p>
+							</div>
+						</div>
+						<div id="player2">
+							<p>Player 2</p>	
+							<select id="player2-color">
+								<option value='' selected ></option>
+								<option value="GREEN">GREEN</option>
+								<option value="VIOLET">VIOLET</option>
+							</select>
+							<div id="player2-win" class="hidden">
+								<p> WINS !! </p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="button-container">
+					<button id="start">Start Game</button>
+					<button id="reset">Reset Game</button>
+				</div>	
+			</main>
+		</div>
+
+		<script src="//code.jquery.com/qunit/qunit-1.17.1.js"></script>
+		<!-- project file -->
+		<script src="js/main.js" data-cover></script>
+		<!-- tests file -->
+		<script src="test/tests.js"></script>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en_US">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Shiva Ramaseshan">
+		<link rel="stylesheet" type="text/css" href="css/styles-min.css" >
+		<title>Connect Four</title>
+	</head>
+	<body>
+		<header>
+			<p>Connect Four</p>
+		</header>
+		<noscript>Sorry, your browser does not support JavaScript! Please enable JavaScript or switch to a JavaScript enabled browser to play the game.</noscript>	
+		<main>
+			<br><br>
+			<div id="piece"></div>
+			<div id="game">
+				<div id="board" >
+				</div>
+				<div id="players">
+					<div id="player1">
+						<p>Player 1</p>
+						<select id="player1-color">
+							<option value='' selected ></option>
+							<option value="YELLOW">YELLOW</option>
+							<option value="RED">RED</option>
+						</select>
+						<div id="player1-win" class="hidden">
+							<p> WINS !! </p>
+						</div>
+					</div>
+					<div id="player2">
+						<p>Player 2</p>	
+						<select id="player2-color">
+							<option value='' selected ></option>
+							<option value="GREEN">GREEN</option>
+							<option value="VIOLET">VIOLET</option>
+						</select>
+						<div id="player2-win" class="hidden">
+							<p> WINS !! </p>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div id="button-container">
+				<button id="start">Start Game</button>
+				<button id="reset">Reset Game</button>
+			</div>
+		</main>
+		<footer>
+			<p>Made by: Shiva Ramaseshan</p>
+  			<p>Contact information: <a href="mailto:shivaseshan@outlook.com">shivaseshan@outlook.com</a></p>
+		</footer>
+		<script type="text/javascript" src="js/main-min.js"></script>
+	</body>
+</html>
